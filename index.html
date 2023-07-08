@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body
-    class="bg-impBlue-300 bg-desktop-pattern bg-no-repeat bg-top min-h-screen flex items-center justify-center text-center"
+    class="bg-impBlue-300 bg-desktop-pattern bg-no-repeat bg-top min-h-screen flex flex-col items-center justify-center text-center"
   >
     <!-- main wrapper div -->
-    <div class="bg-white max-w-[450px] rounded-3xl mx-5 pb-3">
-      <!-- main wrapper div -->
+    <div class="bg-white max-w-[410px] rounded-3xl mx-5 pb-3">
+      <!-- div logo -->
       <div>
         <img
           class="rounded-tl-3xl rounded-tr-3xl"
@@ -18,6 +23,7 @@
           alt="main illustration of card, showing animated character wearing a headphones and dancing with their hands. character is wearing black undershirts and green t-shirt"
         />
       </div>
+      <!-- div text-h1-p -->
       <div class="mb-6 space-y-2">
         <h1 class="mt-5 mb-4 text-2xl font-black text-impBlue-500">
           Order Summary
@@ -27,10 +33,13 @@
           any device anywhere you like!
         </p>
       </div>
+      <!-- price parent div -->
       <div
-        class="bg-impBlue-200 flex items-center justify-between mx-10 px-4 rounded-lg py-4"
+        class="bg-impBlue-200 flex items-center justify-between mx-8 px-4 rounded-lg py-4"
       >
+        <!-- svg and price div -->
         <div class="flex items-center">
+          <!-- svg music icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <g fill="none" fill-rule="evenodd">
               <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
@@ -41,24 +50,28 @@
               />
             </g>
           </svg>
+          <!-- price -->
           <div class="flex flex-col items-center ml-4">
             <p class="text-impBlue-500 font-bold ml-1.5 text-sm">Annual Plan</p>
             <p class="text-impBlue-100 text-sm">$59.99/year</p>
           </div>
         </div>
-
+        <!-- change button -->
         <a
           class="underline text-impBlue-400 text-sm font-bold transition-all duration-100 hover:opacity-70 focus-within:outline-none focus-within:border-2 focus-within:border-impBlue-400 focus-within:p-1.5 focus-within:no-underline"
           href="#"
           >Change</a
         >
       </div>
-      <div class="mt-6 space-y-2 mx-10">
+      <!-- buttons parent div -->
+      <div class="mt-6 space-y-2 mx-8">
+        <!-- button 1 -->
         <button
           class="block font-bold shadow-lg bg-impBlue-400 text-impBlue-200 text-center px-4 py-3 rounded-lg w-full hover:opacity-70 transition-all duration-100"
         >
           Proceed to Payment
         </button>
+        <!-- button 2 -->
         <button
           class="text-impBlue-100 font-bold px-4 py-3 block w-full transition-all duration-100 hover:text-impBlue-500"
         >
@@ -67,4 +80,22 @@
       </div>
     </div>
   </body>
+  <!-- attribution -->
+  <div
+    class="block text-sm opacity-60 justify-self-end mt-20 mx-4 text-impBlue-400"
+  >
+    Challenge by
+    <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      class="underline font-bold hover:text-impBlue-100 transition duration-75"
+      target="_blank"
+      >Frontend Mentor</a
+    >. Coded by
+    <a
+      href="https://github.com/mandriva19"
+      target="_blank"
+      class="underline font-bold hover:text-impBlue-100 transition duration-75"
+      >Mandriva19</a
+    >.
+  </div>
 </html>
