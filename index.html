@@ -1,11 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/main.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body
+    class="bg-impBlue-300 bg-desktop-pattern bg-no-repeat bg-top min-h-screen flex items-center justify-center text-center"
+  >
+    <!-- main wrapper div -->
+    <div class="bg-white max-w-[450px] rounded-3xl mx-5 pb-3">
+      <!-- main wrapper div -->
+      <div>
+        <img
+          class="rounded-tl-3xl rounded-tr-3xl"
+          src="./images/illustration-hero.svg"
+          alt="main illustration of card, showing animated character wearing a headphones and dancing with their hands. character is wearing black undershirts and green t-shirt"
+        />
+      </div>
+      <div class="mb-6 space-y-2">
+        <h1 class="mt-5 mb-4 text-2xl font-black text-impBlue-500">
+          Order Summary
+        </h1>
+        <p class="text-center text-sm leading-6 text-impBlue-100 w-3/4 mx-auto">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+      <div
+        class="bg-impBlue-200 flex items-center justify-between mx-4 px-4 rounded-lg py-4"
+      >
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+              <path
+                fill="#717FA6"
+                fill-rule="nonzero"
+                d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+              />
+            </g>
+          </svg>
+          <div class="flex flex-col items-center ml-4">
+            <p class="text-impBlue-500 font-bold ml-1.5 text-sm">Annual Plan</p>
+            <p class="text-impBlue-100 text-sm">$59.99/year</p>
+          </div>
+        </div>
+
+        <a
+          class="underline text-impBlue-400 text-sm font-bold transition-all duration-100 hover:opacity-70 focus-within:outline-none focus-within:border-2 focus-within:border-impBlue-400 focus-within:p-1.5 focus-within:no-underline"
+          href="#"
+          >Change</a
+        >
+      </div>
+      <div class="px-4 mt-4 space-y-2">
+        <button
+          class="block font-bold shadow-lg bg-impBlue-400 text-impBlue-200 text-center px-4 py-3 rounded-lg w-full hover:opacity-70 transition-all duration-100"
+        >
+          Proceed to Payment
+        </button>
+        <button
+          class="text-impBlue-100 font-bold px-4 py-3 block w-full transition-all duration-100 hover:text-impBlue-500"
+        >
+          Cancel Order
+        </button>
+      </div>
+    </div>
   </body>
 </html>
